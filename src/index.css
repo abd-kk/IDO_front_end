@@ -1,0 +1,50 @@
+:root {
+  font-family: "Helvetica Neue", sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: black;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0px !important;
+}
+
+/* Start Colors Declaration */
+
+:root {
+  --highImportanceColor: #dc3545;
+  --mediumImportanceColor: #fe913e;
+  --lowImportanceColor: #39ac95;
+}
+
+/* End Colors Declaration */
+
+/* Standard Media Queries */
+
+/* Small */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

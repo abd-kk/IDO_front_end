@@ -1,0 +1,130 @@
+.home-page-content .quote {
+  background: transparent linear-gradient(180deg, #6e4c85 0%, #2d2b52 100%) 0%
+    0% no-repeat padding-box;
+  transition: opacity 0.6s;
+}
+.home-page-content .quote.visible {
+  opacity: 1;
+  height: 68px;
+}
+.home-page-content .quote.hidden {
+  opacity: 0;
+  height: 0px;
+}
+.home-page-content .to-do-item .add-title-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-weight: bold;
+  resize: none;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 30px;
+  transition: height 0.3s;
+  overflow-y: hidden;
+}
+.home-page-content .to-do-item .add-title-input:focus {
+  outline: none;
+}
+
+.home-page-content .to-do-item .add-title-input.error {
+  border-bottom-color: red;
+}
+.home-page-content .to-do-item .add-title-input.error::placeholder {
+  color: rgba(255, 0, 0, 0.708);
+}
+
+.home-page-content .to-do-item .category-input,
+.home-page-content .to-do-item .estimate-input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 95%;
+  max-width: 300px;
+  position: relative;
+}
+.home-page-content .to-do-item .estimate-input {
+  position: relative;
+}
+.home-page-content .to-do-item .estimate-input.error,
+.home-page-content .to-do-item .category-input.error {
+  border-color: red;
+  color: red;
+  caret-color: black;
+}
+
+.home-page-content .to-do-item input:focus {
+  outline: none;
+}
+.home-page-content .to-do-item .save-button,
+.home-page-content .to-do-item .cancel-button {
+  border: none;
+  transition: 0.3s;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+.home-page-content .to-do-item .save-button {
+  background-color: #8e7ad2;
+}
+.home-page-content .to-do-item .cancel-button {
+  background-color: #bbb;
+  color: black;
+}
+.home-page-content .to-do-item .save-button:hover {
+  background-color: #644ead;
+}
+.home-page-content .to-do-item .to-do-duedate {
+  padding: 0px !important;
+}
+
+@media (max-width: 500px) {
+  .home-page-content .quote .quote-text {
+    font-size: 16px;
+  }
+  .home-page-content .quote .remove-quote {
+    width: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page-content .to-do-item .add-title-input {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-page-content .to-do-item .add-title-input {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-page-content .to-do-item .add-title-input {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .home-page-content .task-column {
+    width: 180px;
+    column-gap: 5px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .home-page-content .to-do-list {
+    column-gap: 10px;
+  }
+  .home-page-content .task-column {
+    width: 200px;
+    column-gap: 10px;
+  }
+}
